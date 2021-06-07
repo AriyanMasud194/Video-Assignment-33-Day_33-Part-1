@@ -1,0 +1,230 @@
+body p {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span {
+  font-family: "Rubik", sans-serif;
+}
+
+.primary_color {
+  color: #e83b3e;
+}
+
+/* ==============hearder_part===================== */
+.main_header {
+  background: #fff !important;
+}
+.fixed_container {
+  width: 1480px !important;
+}
+ul.menu_bar > li {
+  position: relative;
+  padding: 20px 15px;
+}
+ul.menu_bar li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #111;
+
+  font-weight: 500;
+}
+ul.menu_bar ul {
+  padding: 10px 23px !important;
+}
+ul.menu_bar ul li a {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+ul.menu_bar ul li a {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+ul.menu_bar ul li:hover a {
+  letter-spacing: 2px;
+  color: #e83b3e;
+}
+ul.menu_bar li .active {
+  color: #e83b3e;
+}
+ul.menu_bar li a {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+ul.menu_bar li a:hover {
+  color: #e83b3e;
+}
+ul.menu_bar li a span {
+  font-size: 12px;
+}
+/* ==========dropdown_one============ */
+
+ul.menu_bar li:hover .dropdown_one {
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+.dropdown_one {
+  position: absolute;
+  left: 0;
+  top: 180%;
+  list-style: none;
+  width: 250px;
+  background: #fff;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);
+}
+.dropdown_one li {
+  line-height: 40px;
+}
+
+.search_icon {
+  width: 50px;
+  border-right: 1px solid #ddd;
+  text-align: center;
+  margin-right: 20px;
+}
+.header_info {
+  width: 200px;
+}
+.buttons {
+  width: 200px;
+}
+.contact_icon {
+  font-size: 35px;
+  color: #e83b3e;
+  transform: rotate(320deg);
+  margin-right: 8px;
+  -webkit-transform: rotate(320deg);
+  -moz-transform: rotate(320deg);
+  -ms-transform: rotate(320deg);
+  -o-transform: rotate(320deg);
+}
+.contact_info a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+.btn-primary {
+  background: #e83b3e !important;
+  border-color: #e83b3e !important;
+  padding: 10px 39px;
+  position: relative;
+  z-index: 1;
+}
+.btn-primary:hover {
+  border-color: #111 !important;
+}
+.btn-primary::after {
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: #111;
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.btn-primary:hover::after {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+}
+.banner_social_icons ul li a {
+  font-size: 19px;
+}
+/* =============banner_section==================== */
+.banner_section {
+  background-image: url(./img/main-banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center center;
+}
+
+.banner_content {
+  align-items: flex-start;
+  height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner_content h1 {
+  font-size: 60px;
+}
+.banner_content h5 {
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.banner_content p {
+  color: #606060;
+  font-size: 17px;
+  margin-bottom: 26px;
+}
+.banner-content-wrap {
+  position: relative;
+  height: 90vh;
+}
+.banner_social_icons {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  align-items: center;
+}
+.banner_social_icons ul li span {
+  margin-right: 40px;
+  position: relative;
+}
+.banner_social_icons ul li span::before {
+  content: "";
+  right: -47px;
+  top: 11px;
+  position: absolute;
+  height: 1px;
+  width: 40px;
+  background: #111;
+}
+.banner_social_icons ul li a {
+  margin: 0 15px;
+  color: #111;
+}
+
+.banner_social_icons ul li a i {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.banner_social_icons ul li a i:hover {
+  color: #e83b3e;
+}
